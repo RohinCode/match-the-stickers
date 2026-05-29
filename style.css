@@ -26,12 +26,12 @@ body {
     color: white;
     gap: 15px;
     flex-wrap: wrap;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.315);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .attempts, .matches {
-    background: linear-gradient(135deg, #f39c12, #e67e22);
+    background: linear-gradient(135deg, #346fdb, #4e77b4);
     padding: 8px 18px;
     border-radius: 30px;
     font-weight: bold;
@@ -40,7 +40,7 @@ body {
 }
 
 #resetButton {
-    background: linear-gradient(135deg, #f39c12, #e67e22);
+    background: linear-gradient(135deg, #346fdb, #4e77b4);
     color: white;
     border: none;
     padding: 8px 20px;
@@ -54,7 +54,7 @@ body {
 
 #resetButton:hover {
     transform: scale(1.05);
-    background: linear-gradient(135deg, #f1c40f, #f39c12);
+    background: linear-gradient(135deg, #054375, #0b5091);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -73,7 +73,7 @@ body {
 }
 
 .card {
-    background: linear-gradient(145deg, #e67e22, #d35400);
+    background: linear-gradient(145deg,  #100657, #000329);
     border-radius: 15px;
     cursor: pointer;
     display: flex;
@@ -119,7 +119,7 @@ body {
 
 .card:hover:not(.matched) {
     transform: translateY(-5px) scale(1.02);
-    background: linear-gradient(145deg, #f39c12, #e67e22);
+    background: linear-gradient(145deg, #050a55, #346fdb);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
 }
 
