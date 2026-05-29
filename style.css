@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #636466 0%, #363438 100%);
+    margin: 0;
+    padding: 20px;
+}
+
+#board {
+    background: linear-gradient(135deg, #232324 2%, #3e3e3f 100%);
+    padding:50px 30px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+    perspective: 1000px;  /* برای انیمیشن سه بعدی */
+    max-width: 600px;  /* محدود کردن عرض کل board */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #e67e22;
+    color: #ffffff;
+    padding: 35px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    user-select: none;  /* جلوگیری از انتخاب متن */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #f79d0d;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+
+.card {
+    background-color: #e67e22;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: none;  /* اول مخفی */
+}
+
+.question-mark {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+.card {
+    background-color: #e67e22;
+    padding: 5px;  /* کمتر از 10px */
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;  /* از 150px به 100px */
+    max-width: 120px;   /* حداکثر عرض */
+}
+
+.card-img {
+    width: 80%;  /* از 100% به 80% */
+    height: auto;
+    border-radius: 5px;
+    display: none;
+}
+
+.question-mark {
+    font-size: 32px;  /* از 48px به 32px */
+    font-weight: bold;
+    color: white;
+}
