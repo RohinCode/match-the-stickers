@@ -136,6 +136,7 @@ function resetGame() {
     showBoard();
 
     setTimeout(hideAllImages, 1000);
+    myName.innerText = "RohinCode"
 }
 
 showBoard();
